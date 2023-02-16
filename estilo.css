@@ -1,0 +1,10 @@
+.tarjeta {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 10px;
+    width: 200%;
+    height: 40%;
+    max-width: 820px;
+    margin: 1em;
+  }

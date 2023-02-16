@@ -10,6 +10,7 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
 
 </head>
 <body>
@@ -200,7 +201,7 @@
   <div class="row">
     <div class="col-md-8">
       <h1>Próximo Lanzamiento</h1>
-      <div class="card mb-3" style="max-width: 540px;">
+      <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-4">
             <img src="./img/seat2.jpg" class="img-fluid rounded-start" alt="seat2">
@@ -215,6 +216,28 @@
               <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
             </div>
           </div>
+          
+        </div>
+      </div>
+      <div class="tarjeta text-center">
+        <div class="search">
+          <input type="text" class="search-bar" placeholder="Buscar">
+          <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
+              width="1.5em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+              </path>
+            </svg></button>
+        </div>
+        <div class="weather loading">
+          <h2 class="city">Clima</h2>
+          <h1 class="temp">51°C</h1>
+          <div class="flex">
+            <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+            <div class="description">Cloudy</div>
+          </div>
+          <div class="humidity">Humidity: 60%</div>
+          <div class="wind">Wind speed: 6.2 km/h</div>
         </div>
       </div>
     </div>
@@ -236,18 +259,7 @@
     </aside>
   </div>
 </div>
-<div class="container">
-  <h1>API de Clima</h1>
-  <!-- Crea una tarjeta de Bootstrap para mostrar los datos del clima -->
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Clima en tu ciudad</h5>
-      <p class="card-text">Temperatura: <span id="temperatura"></span></p>
-      <p class="card-text">Humedad: <span id="humedad"></span></p>
-      <p class="card-text">Descripción: <span id="descripcion"></span></p>
-    </div>
-  </div>
-</div>
+
 <br>
 <br>
 <br>
@@ -306,6 +318,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="clima.js"></script>
 
 </html>
