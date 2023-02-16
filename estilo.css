@@ -1,5 +1,5 @@
 .tarjeta {
-    background: #000000d0;
+  background-image: url('https://source.unsplash.com/1600x900/?');
     color: white;
     padding: 2em;
     border-radius: 10px;
@@ -7,4 +7,13 @@
     height: 40%;
     max-width: 820px;
     margin: 1em;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .tarjeta {
+      width: 100%;
+    }
+    .weather {
+      font-size: 1.5rem;
+    }
   }

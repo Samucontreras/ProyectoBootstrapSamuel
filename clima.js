@@ -30,6 +30,8 @@ let weather = {
       "Humedad: " + humidity + "%";
     document.querySelector(".wind").innerText =
       "Viento: " + speed + " km/h";
+      document.body.style.backgroundImage =
+      "url('https://source.unsplash.com/?" + name + "')";
     document.querySelector(".weather").classList.remove("loading");
     
   },
